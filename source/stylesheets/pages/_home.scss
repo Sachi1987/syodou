@@ -1,0 +1,21 @@
+.box {
+  background: url(/images/people.jpg) no-repeat center bottom fixed;
+  background-size: cover;
+  height: auto;
+  min-height: 100vh;
+  z-index: 2;
+}
+
+@media only screen and (max-width: 767px){
+  img{
+    width: 100%;
+    height: auto;
+  }
+}
+/* pc　768px以上 */
+@media only screen and (min-width: 768px), print {
+  img{
+    width: 100%;
+    height: 590px;
+  }
+}
