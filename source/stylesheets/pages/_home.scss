@@ -18,6 +18,14 @@
   z-index: 2;
 }
 
+.box3 {
+  background: url(/images/b.jpg) no-repeat center bottom fixed;
+  background-size: cover;
+  height: auto;
+  min-height: 100vh;
+  z-index: 2;
+}
+
 @media only screen and (max-width: 767px){
   img{
     width: 100%;
