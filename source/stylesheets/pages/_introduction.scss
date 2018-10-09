@@ -1,0 +1,36 @@
+.intro{
+  background-color: #EFEFEF;
+}
+
+// About tables
+tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: #616668;
+  background-color: white;
+  margin-bottom: 30px;
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 3px;
+  display: flex;
+  align-item: center;
+  justify-content: space-around;
+}
+
+td,th {
+  border: 1px solid #999;
+  height: 40px;
+  text-align: center;
+}
+
+.price td{
+  width: 160px;
+}
+
+.price th{
+  width: 147px;
+}
