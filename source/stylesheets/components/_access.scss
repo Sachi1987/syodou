@@ -1,8 +1,15 @@
-
 .bloc__commonHalf {
     position: relative;
     width: 50%;
-    height: 425px;
+    height: 470px;
+    float: left;
+    text-align: left;
+}
+
+.bloc__commonHalf2 {
+    position: relative;
+    width: 50%;
+    height: 480px;
     float: left;
     text-align: left;
 }
@@ -13,6 +20,13 @@
 
 .bloc__commonHalf__inner-is-right {
     left: 30px;
+}
+
+.bloc__commonHalf__inner {
+    position: absolute;
+    top: 30px;
+    width: 470px;
+    height: 365px;
 }
 
 .bloc__commonHalf__inner {
