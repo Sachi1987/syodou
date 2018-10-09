@@ -11,8 +11,20 @@
     <meta name= “keywords” content="福岡市早良区,習字教室,書道">
 
     <link href="stylesheets/application-4af8013b.css" rel="stylesheet" />
-    <script src="javascripts/application-93de88c9.js"></script>
+    <script src="javascripts/application-1adc2551.js"></script>
 
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script>
+      jQuery(function($) {
+        $('a[href^="#"]').SmoothScroll({
+          duration: 1000,
+          easing  : 'easeOutQuint'
+        });
+      });
+    </script>
+
+    <script src="/node_modules/jquery.smoothscroll/dist/jquery.smoothscroll.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
@@ -47,12 +59,12 @@
 
   <!-- Right Navigation -->
   <div class="navbar-wagon-right hidden-xs hidden-sm">
-    <a href="" class="navbar-wagon-item navbar-wagon-link">ご挨拶</a>
-    <a href="" class="navbar-wagon-item navbar-wagon-link">教室紹介</a>
-    <a href="" class="navbar-wagon-item navbar-wagon-link">月謝案内</a>
-    <a href="" class="navbar-wagon-item navbar-wagon-link">アクセス</a>
-    <a href="" class="navbar-wagon-item navbar-wagon-link">キャンペーン</a>
-    <a href="" class="navbar-wagon-item navbar-wagon-link">お問い合わせ</a>
+    <a href="#1" class="navbar-wagon-item navbar-wagon-link">ご挨拶</a>
+    <a href="#2" class="navbar-wagon-item navbar-wagon-link">教室紹介</a>
+    <a href="#3" class="navbar-wagon-item navbar-wagon-link">月謝案内</a>
+    <a href="#4" class="navbar-wagon-item navbar-wagon-link">アクセス</a>
+    <a href="#5" class="navbar-wagon-item navbar-wagon-link">キャンペーン</a>
+    <a href="#6" class="navbar-wagon-item navbar-wagon-link">お問い合わせ</a>
 </div>
 
   <!-- Dropdown appearing on mobile only -->
@@ -74,7 +86,7 @@
     <div class="header">
   <div class="box1 key">
   </div>
-    <div style="padding: 75px 0 30px 0;">
+    <div id="1" style="padding: 75px 0 30px 0;">
   <div class="container">
     <h3 class="title"><i class="fas fa-pen-alt title"></i>&nbspご挨拶</h3>
     <div class="textarea" style="padding: 0 15px;">
@@ -83,7 +95,7 @@
   </div>
 </div>
 
-    <div class="intro" style="padding: 75px 0 30px 0;">
+    <div id="2" class="intro" style="padding: 75px 0 30px 0;">
   <div class="container">
     <div class="title"><h3><i class="fas fa-home"></i>&nbsp習字教室紹介</h3>
     <br><p>現在、曜日によっては満席でお断りさせていただいております。<br>あらかじめご了承ください。</p></div>
@@ -138,7 +150,7 @@
 
   <div class="box2 key">
   </div>
-    <div style="padding: 75px 0 30px 0;">
+    <div id="3" style="padding: 75px 0 30px 0;">
   <div class="container">
     <h3 class="title"><i class="fas fa-shopping-bag"></i>&nbsp月謝案内</h3>
     <div style="text-align: center;margin: 15px">お稽古は月に3回とさせていただいております。<br>検定料とは、日本習字の昇級審査とお手本の会費になります。</span></div>
@@ -193,7 +205,7 @@
   </div>
 </div>
 
-    <div style="background-color: #EFEFEF;padding-top: 75px;">
+    <div id="4" style="background-color: #EFEFEF;padding-top: 75px;">
   <div class="container" style="text-align: center;margin-bottom: 50px;">
     <h3 class="title"><i class="fas fa-car title"></i>&nbspアクセス</h3>
     <br><p>駐車場の台数に限りがありますので、お車でお越しの際は前もってご連絡ください。<br>
@@ -230,7 +242,7 @@
   <div class="box3 key">
   </div>
 
-    <div style="padding: 75px 0 30px 0;">
+    <div id="5" style="padding: 75px 0 30px 0;">
   <div class="container" style="margin-bottom: 15px 0;text-align: center;">
     <h3 class="title"><i class="fas fa-info"></i>&nbspお知らせ</h3>
     <br><p>玲翠教室のFacebookページにて日本習字のキャンペーンのお知らせや文化祭の情報を掲載しております。<br>次回の玲翠教室文化祭は2019年3月を予定しております。</p>
