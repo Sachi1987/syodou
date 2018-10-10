@@ -17,3 +17,32 @@
 .info-all{
   margin-bottom: 30px;
 }
+
+
+@media print, screen and (min-width: 640px) {
+  .info-all {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .info-text{
+    width: 35%;
+    margin: 20px;
+  }
+  .info-face{
+    width: 40%;
+    margin: 20px;
+  }
+}
+
+/* スマートフォン用CSS */
+@media screen and (max-width: 640px) {
+  .info-text{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .info-face{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}

@@ -1,6 +1,5 @@
 .google-map {
   position: relative;
-  // width: 100%;    /* 左右に余白が必要なら値を変更してもOK */
   height: 0;
   padding-bottom: 56.25%;    /* padding-topでもOK */
   overflow: hidden;
@@ -26,7 +25,6 @@
     justify-content: space-around;
     align-items: center;
   }
-
   .home{
     width: 40%;
     margin: 20px;
@@ -37,15 +35,14 @@
   }
 }
 
-
 /* スマートフォン用CSS */
 @media screen and (max-width: 640px) {
   .home{
     width: 100%;
-     margin-bottom: 20px;
+    margin-bottom: 20px;
   }
   .sub-place{
     width: 100%;
-     margin-bottom: 20px;
+    margin-bottom: 20px;
   }
 }
