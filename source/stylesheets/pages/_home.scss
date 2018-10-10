@@ -2,29 +2,6 @@
   text-align: center;
 }
 
-.box1 {
-  background: url(/images/people.jpg) no-repeat center bottom fixed;
-  background-size: cover;
-  height: auto;
-  min-height: 100vh;
-  z-index: 2;
-}
-
-.box2 {
-  background: url(/images/paper.jpg) no-repeat center bottom fixed;
-  background-size: cover;
-  height: auto;
-  min-height: 100vh;
-  z-index: 2;
-}
-
-.box3 {
-  background: url(/images/b.jpg) no-repeat center bottom fixed;
-  background-size: cover;
-  height: auto;
-  min-height: 100vh;
-  z-index: 2;
-}
 
 // パソコン用CSS
 @media print, screen and (min-width: 640px) {
@@ -57,18 +34,18 @@
     background: url(/images/people.jpg) no-repeat center bottom fixed;
     background-size: contain;
     padding-top: 56.25%;
-    height: 0;
+    height: 40%;
   }
   .box2 {
     background: url(/images/paper.jpg) no-repeat center bottom fixed;
     background-size: contain;
     padding-top: 56.25%;
-    height: 0;
+    height: 40%;
   }
   .box3 {
     background: url(/images/b.jpg) no-repeat center bottom fixed;
     background-size: contain;
     padding-top: 56.25%;
-    height: 0;
+    height: 40%;
   }
 }
