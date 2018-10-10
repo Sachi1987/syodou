@@ -1,13 +1,13 @@
 // パソコン用CSS
 @media print, screen and (min-width: 640px) {
-  .price {
+  .money {
     padding: 75px 0 30px 0;
   }
 }
 
 /* スマートフォン用CSS */
 @media screen and (max-width: 640px) {
-  .price {
+  .money {
     padding-bottom: 20px;
   }
 }
