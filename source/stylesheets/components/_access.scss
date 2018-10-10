@@ -20,6 +20,10 @@
 
 
 @media print, screen and (min-width: 640px) {
+  .access{
+    background-color: #EFEFEF;
+    padding-top: 75px;
+  }
   .map {
     display: flex;
     justify-content: space-around;
@@ -37,7 +41,10 @@
 
 /* スマートフォン用CSS */
 @media screen and (max-width: 640px) {
-  .home{
+  .access{
+    padding: 20px 0;
+  }
+    .home{
     width: 100%;
     margin-bottom: 20px;
   }

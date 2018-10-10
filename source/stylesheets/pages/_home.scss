@@ -24,13 +24,13 @@
     height: auto;
     min-height: 100vh;
     z-index: 2;
-}
+  }
 }
 
 /* スマートフォン用CSS */
 @media screen and (max-width: 640px) {
   .box1 {
-    margin-top: 70px;
+    margin-top: 78px;
     height: 0;
     /* 表示画像の高さ ÷ 表示画像の幅 × 100 */
     padding-top: 60.25%;
@@ -45,8 +45,7 @@
     background-size: contain;
   }
   .box3 {
-
-     height: 0;
+    height: 0;
     /* 表示画像の高さ ÷ 表示画像の幅 × 100 */
     padding-top: 56.25%;
     background: url(/images/b.jpg) 0 0 no-repeat;

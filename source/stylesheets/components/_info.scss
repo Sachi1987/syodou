@@ -20,6 +20,9 @@
 
 
 @media print, screen and (min-width: 640px) {
+  .info{
+    padding: 75px 0 30px 0;
+  }
   .info-all {
     display: flex;
     justify-content: space-around;
@@ -37,6 +40,9 @@
 
 /* スマートフォン用CSS */
 @media screen and (max-width: 640px) {
+  .info{
+    padding-bottom: 20px;
+  }
   .info-text{
     width: 100%;
     margin-bottom: 20px;
@@ -46,3 +52,4 @@
     margin-bottom: 20px;
   }
 }
+
