@@ -2,6 +2,20 @@
   text-align: center;
 }
 
+// デバイスによって表示・非表示
+// PCでは表示させたいけど、スマホでは表示させたくない部分に「.pc」のクラスを追加。
+// スマホでは表示させたいけど、PCでは表示させたくない部分に「.mb」のクラスを追加。
+/*PCの場合*/
+.pc { display:inline!important; }
+.mb { display:none!important; }
+@media screen and (max-width: 768px) {
+/*タブレット、スマホの場合*/
+.pc { display:none!important; }
+.mb { display:inline!important; }
+}
+
+
+
 // パソコン用CSS
 @media print, screen and (min-width: 640px) {
   .box1 {
@@ -30,7 +44,7 @@
 /* スマートフォン用CSS */
 @media screen and (max-width: 640px) {
   .box1 {
-    margin-top: 78px;
+    margin-top: 90px;
     height: 0;
     /* 表示画像の高さ ÷ 表示画像の幅 × 100 */
     padding-top: 60.25%;
