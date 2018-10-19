@@ -1,23 +1,49 @@
-.footer {
-  background: #F4F4F4;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 120px;
-  padding: 0px 50px;
-}
-.footer-links {
-  display: flex;
-  align-items: center;
-}
-.footer-links a {
-  color: #554F48;
-  text-decoration: none;
-  font-size: 30px;
-  padding: 0px 10px;
+@media print, screen and (min-width: 640px) {
+  .footer {
+    background: #F4F4F4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 120px;
+    padding: 0px 50px;
+  }
+  .footer-links {
+    display: flex;
+    align-items: center;
+  }
+  .footer-links a {
+    color: #554F48;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 0px 10px;
+  }
+  .footer-copyright {
+    color: #554F48;
+  }
 }
 
-.footer-copyright {
+/* スマートフォン用CSS */
+@media screen and (max-width: 640px) {
+  .footer {
+    background: #F4F4F4;
+    align-items: center;
+    height: 140px;
+    padding: 0px 50px;
+  }
+  .left {
+    text-align: center;
+  }
+  .left a {
+  margin: 5px;
   color: #554F48;
+  /* 値は調整してください */
+  top: 5px;
+  left: 5px;
+  font-size: 30px;
+  }
+  .footer-copyright {
+    text-align: center;
+  }
 }
+
 
