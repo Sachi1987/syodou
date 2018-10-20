@@ -11,7 +11,7 @@
     <meta name="description" content="福岡市早良区原にある習字教室です。4歳から80代の方々まで美しい文字を書けるように励んでいます。">
     <meta name= “keywords” content="福岡市早良区,習字教室,書道">
 
-    <link href="stylesheets/application-712948f3.css" rel="stylesheet" />
+    <link href="stylesheets/application-c13be4b6.css" rel="stylesheet" />
     <script src="javascripts/application-1adc2551.js"></script>
 
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
@@ -44,6 +44,29 @@
           },switchDelay);
       });
       </script>
+
+      <script>
+window.addEventListener('load', function () {
+  var $submitBtn = document.getElementById('submitBtn');
+  var milkform = new MilkForm('seajngq0t86', function(isSupported){
+    // ロード完了時処理を書きたい場合はここ
+    // isSupportedにはMilkcocoaにブラウザが対応しているかが帰ってくるので
+    // milkform-fallbackを使わずに、サポートの有無に応じてこちらに自由に処理を書くことも出来ます
+  });
+  milkform.onSuccess(function(datum){
+    //送信成功時処理を書きたい場合はここ
+  });
+  milkform.onFailure(function(error){
+    //送信失敗時処理を書きたい場合はここ
+  });
+
+  $submitBtn.addEventListener('click', function () {
+    // ここにバリデーションとか
+    milkform.submit();
+  });
+});
+</script>
+
   </head>
 
   <body>
@@ -260,7 +283,7 @@
 
   <div class="box3 key">
   </div>
-    <div id="5" class="info">
+    <div id="5" class="info" style="background-color: white;">
   <div class="container" style="margin-bottom: 40px 0;text-align: center;">
     <h3 class="title"><i class="fas fa-info"></i>&nbspお知らせ</h3>
     <br><p>玲翠教室のFacebookページにて日本習字のキャンペーンのお知らせや文化祭の情報を掲載しております。<br>次回の玲翠教室文化祭は2019年3月を予定しております。</p>
@@ -294,21 +317,16 @@
     </div>
 
     <div style="text-align:center">
-      <form><br>
+      <form  action="mailto:sachi1210@me.com" method="post" enctype="text/plain"><br>
         <div class="form-group col-md-offset-3 col-xs-12 col-md-6">
-          <label for="exampleFormControlInput1">お名前</label>
-          <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="山田　花子">
-        </div>
-        <div class="form-group col-md-offset-3 col-xs-12 col-md-6">
-          <label for="exampleFormControlInput1">メールアドレス</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-        </div>
-        <div class="form-group col-md-offset-3 col-xs-12 col-md-6">
-          <label for="exampleFormControlTextarea1">お問い合わせ内容</label>
+          <label for="name">お名前</label>
+          <input type="text" name="お名前" class="form-control" placeholder="山田　花子">
+        <div class="form-group col-xs-12">
+          <label for="exampleFormControlTextarea1" style="margin-top: 13px;">お問い合わせ内容</label>
           <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="ご質問などがあればこちらにお願いします。"></textarea>
         </div>
         <div class="form-group col-md-offset-3 col-xs-12 col-md-6">
-          <button type="submit" class="btn btn-primary">送信</button>
+          <button type="submit" value="Send" class="btn btn-primary">送信</button>
         </div>
       </form><br>
     </div>
