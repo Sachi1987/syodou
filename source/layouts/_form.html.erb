@@ -1,13 +1,21 @@
-<div id="6" class="form" style="background-color: white;padding: 75px 0 30px 0;">
+<div id="form-div" class="form">
   <div class="container">
-    <h3 class="title"><i class="far fa-envelope title"></i>&nbspお問い合わせ</h3>
-    <div class="textarea" style="text-align: center">
+    <h3 class="title">
+      <i class="far fa-envelope title"></i>
+      &nbsp お問い合わせ
+    </h3>
+    <div class="textarea">
       <p>体験教室のお申し込みやご質問はお電話かこちらのフォームにてご連絡ください。<br>スピーディな対応を心がけておりますが、少々お時間をいただく場合がございます。<br>あらかじめご了承ください。</p>
     </div>
 
-    <div style="text-align:center">
-      <form><br>
-        <div class="form-group col-md-offset-3 col-xs-12 col-md-6">
+    <div>
+      <form action="mailto:sachi1210@me.com" method="post" enctype="text/plain">
+        Name:<br>
+        <input type="text" name="name"><br>
+        E-mail:<br>
+        <input type="text" name="mail"><br>
+        <input type="submit" value="Send">
+        <!-- <div class="form-group col-md-offset-3 col-xs-12 col-md-6">
           <label for="exampleFormControlInput1">お名前</label>
           <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="山田　花子">
         </div>
@@ -21,8 +29,8 @@
         </div>
         <div class="form-group col-md-offset-3 col-xs-12 col-md-6">
           <button type="submit" class="btn btn-primary">送信</button>
-        </div>
-      </form><br>
+        </div> -->
+      </form>
     </div>
   </div>
 </div>
