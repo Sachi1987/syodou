@@ -2,6 +2,8 @@
 //= require bootstrap
 //= require_tree .
 
+// What does this JS do?
+
 $(function(){
 $('a[href^="#"]').click(function(){
 var speed = 500;
@@ -12,3 +14,4 @@ $("html, body").animate({scrollTop:position}, speed, "swing");
 return false;
 });
 });
+
