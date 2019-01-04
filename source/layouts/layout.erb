@@ -14,40 +14,21 @@
     <%= stylesheet_link_tag "application" %>
     <%= javascript_include_tag "application" %>
 
-    <!-- jQuery Again -->
-    <!-- <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script> -->
-    <!-- jQuery Easing JS file -->
-    <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script> -->
-    <!-- <script>
-      jQuery(function($) {
-        $('a[href^="#"]').SmoothScroll({
-          duration: 1000,
-          easing  : 'easeOutQuint'
-        });
-      });
-    </script> -->
-
-    <!-- <script src="/node_modules/jquery.smoothscroll/dist/jquery.smoothscroll.min.js"></script> -->
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- fontAwesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <!-- jQuery -->
-    <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script> -->
-    <!-- What does this script do? -->
 
   </head>
 
   <body>
-    <!-- What is this div? -->
-    <div id="fb-root"></div>
-      <!-- Render main navigation bar. -->
+    <!-- Render main navigation bar. -->
     <%= partial "layouts/navbar" %>
-    <!-- Render main content. -->
+    <!-- Render ../index.html.erb -->
     <%= yield %>
     <!-- Render main footer. -->
     <%= partial "layouts/footer" %>
-    <!-- What does this script do? -->
+    <!-- This script renders the facebook card at the bottom of the page. -->
     <script>
       (function(d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
@@ -56,21 +37,6 @@
         js.src = 'https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v3.1&appId=800410130289922&autoLogAppEvents=1';
         fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
-    </script>
-    <!-- What does this script do? -->
-    <script type="text/javascript">
-      $(function(){
-          var setImg = '#photo';
-          var fadeSpeed = 1500;
-          var switchDelay = 4000;
-
-          $(setImg).children('img').css({opacity:'0'});
-          $(setImg + ' img:first').stop().animate({opacity:'1',zIndex:'20'},fadeSpeed);
-
-          setInterval(function(){
-              $(setImg + ' :first-child').animate({opacity:'0'},fadeSpeed).next('img').animate({opacity:'1'},fadeSpeed).end().appendTo(setImg);
-          },switchDelay);
-      });
     </script>
   </body>
 </html>
